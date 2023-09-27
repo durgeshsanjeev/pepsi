@@ -11,7 +11,7 @@ body{
     color: #fff;
     font-size: 14px;
     overflow: hidden !important;
-    background-image: url("/image/bgimg.png");
+    background-image: url("../image/bgimg.png");
     
 }
 
@@ -28,14 +28,14 @@ body{
     -webkit-text-stroke-width: 1px;
     color: transparent;
     right: 0;
-    animation: drift 6s linear infinite;
+    animation: drift 6s ;
 }
 
 
 
 @keyframes drift {
 	from {
-		transform: translateX(1250px);
+		transform: translateX(2200px);
 	}
 	to {
 		
@@ -232,5 +232,8 @@ header{
 
             .arrow {
                 bottom: -50px;}
+                .bordertext{
+                    display: none;
+                }
 
   }
