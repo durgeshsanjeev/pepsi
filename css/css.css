@@ -10,9 +10,44 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 14px;
-    overflow-y: hidden !important;
+    overflow: hidden !important;
+    background-image: url("/image/bgimg.png");
+    
 }
 
+
+.bordertext{
+    position: absolute;
+    top: -14vh;
+    font-size: 13vh;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+    z-index: -2;
+    font-weight: 900;
+    -webkit-text-stroke-color: #ffffff45;
+    -webkit-text-stroke-width: 1px;
+    color: transparent;
+    right: 0;
+    animation: drift 6s linear infinite;
+}
+
+
+
+@keyframes drift {
+	from {
+		transform: translateX(1250px);
+	}
+	to {
+		
+        transform: translateX(0px);
+	}
+}
+
+
+.logoheader{
+    height: 80px;
+    margin-top: 10px;
+}
 .container{
     max-width: 84%;
     margin: auto;
@@ -26,6 +61,7 @@ header{
 
 .socilemedia{
     padding: 0;
+    display: flex;
 }
 .socilemedia li {
     color: #fff; 
@@ -133,6 +169,7 @@ header{
 
 .carousel-inner {
     overflow: visible;
+    position: relative;
 }
 
 .carousel.slide{
@@ -143,7 +180,7 @@ header{
 
 .imag{
     position: absolute;
-    top: -25vh;
+    top: -20vh;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -170,5 +207,30 @@ header{
         right: 0px;
         bottom: 0;
         z-index: -1;
+        filter: blur(7px);
+        height: 90vh;
     }
+
+    .socilemedia{
+        display: flex;
+    }
+
+    .heading {
+        font-size: 7vh;}
+
+        .subtitel {
+            margin-top: 20px;
+            font-size: 3vh;}
+
+            .container{
+                max-width: 94%;
+            }
+
+            .logoheader{
+                height: 50px;
+            }
+
+            .arrow {
+                bottom: -50px;}
+
   }
