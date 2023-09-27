@@ -1,22 +1,22 @@
-:root{
-    --darkBlack:#000;
-    --red:#EB0A1E;
-    --blue:#2B3CF7;
-    --white :#fff;
+:root {
+    --darkBlack: #000;
+    --red: #EB0A1E;
+    --blue: #2B3CF7;
+    --white: #fff;
 }
 
-body{
+body {
     background-color: var(--darkBlack);
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 14px;
     overflow: hidden !important;
     background-image: url("../image/bgimg.png");
-    
+
 }
 
 
-.bordertext{
+.bordertext {
     position: absolute;
     top: -14vh;
     font-size: 13vh;
@@ -28,49 +28,52 @@ body{
     -webkit-text-stroke-width: 1px;
     color: transparent;
     right: 0;
-    animation: drift 6s ;
+    animation: drift 6s;
 }
 
 
 
 @keyframes drift {
-	from {
-		transform: translateX(2200px);
-	}
-	to {
-		
+    from {
+        transform: translateX(2200px);
+    }
+
+    to {
+
         transform: translateX(0px);
-	}
+    }
 }
 
 
-.logoheader{
+.logoheader {
     height: 80px;
     margin-top: 10px;
 }
-.container{
+
+.container {
     max-width: 84%;
     margin: auto;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.socilemedia{
+.socilemedia {
     padding: 0;
     display: flex;
 }
+
 .socilemedia li {
-    color: #fff; 
+    color: #fff;
     display: inline-block;
     padding: 0 10px;
     font-size: 22px;
 }
 
-.playButton{
+.playButton {
     width: 70px;
     height: 70px;
     background-color: var(--red);
@@ -82,23 +85,23 @@ header{
     color: #fff;
 }
 
-.subtitel{
- color: var(--blue);
- margin-top: 50px;
- font-size: 5vh;
- font-style: italic;
+.subtitel {
+    color: var(--blue);
+    margin-top: 50px;
+    font-size: 5vh;
+    font-style: italic;
 }
 
-.heading{
+.heading {
     color: var(--red);
     font-size: 13vh;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--white);
-    font-weight:900;
+    font-weight: 900;
 }
 
 
-.buybuttom{
+.buybuttom {
     padding: 10px 20px;
     color: var(--white);
     background-color: var(--red);
@@ -108,7 +111,7 @@ header{
     margin-top: 50px;
 }
 
-.sliderdot{
+.sliderdot {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -117,7 +120,7 @@ header{
     padding-left: 7.5% !important;
 }
 
-.sliderdot button{
+.sliderdot button {
     width: 16px;
     height: 16px;
     border-radius: 50px;
@@ -126,7 +129,7 @@ header{
     margin-right: 10px;
 }
 
-.carousel-indicators [data-bs-target]{
+.carousel-indicators [data-bs-target] {
     width: 16px;
     height: 16px;
     background-color: transparent;
@@ -134,17 +137,19 @@ header{
     border: solid 1px var(--white);
 }
 
-.carousel-indicators{
+.carousel-indicators {
     justify-content: left;
 }
 
-.sliderdot button.active{
+.sliderdot button.active {
     background-color: var(--red);
     border: none;
     width: 26px;
     height: 26px;
 }
-.carousel-control-next, .carousel-control-prev{
+
+.carousel-control-next,
+.carousel-control-prev {
     position: absolute;
     position: relative;
     width: auto;
@@ -152,7 +157,7 @@ header{
     padding: 15px 13px;
 }
 
-.arrow{
+.arrow {
     display: flex;
     position: absolute;
     right: 0;
@@ -164,7 +169,7 @@ header{
 .carousel-item {
     padding: 0 8%;
 
-    
+
 }
 
 .carousel-inner {
@@ -172,13 +177,13 @@ header{
     position: relative;
 }
 
-.carousel.slide{
+.carousel.slide {
     height: calc(100vh - 120px);
     display: flex;
     align-items: center;
 }
 
-.imag{
+.imag {
     position: absolute;
     top: -20vh;
     right: 0;
@@ -188,20 +193,20 @@ header{
 
 
 @media only screen and (max-width: 1440px) {
-    .imag{
+    .imag {
         position: absolute;
         top: -10vh;
         right: -50px;
         bottom: 0;
         z-index: -1;
     }
-  }
+}
 
 
-  
+
 
 @media only screen and (max-width: 767px) {
-    .imag{
+    .imag {
         position: absolute;
         top: -10vh;
         right: 0px;
@@ -211,29 +216,38 @@ header{
         height: 90vh;
     }
 
-    .socilemedia{
+    .socilemedia {
         display: flex;
     }
 
     .heading {
-        font-size: 7vh;}
+        font-size: 7vh;
+    }
 
-        .subtitel {
-            margin-top: 20px;
-            font-size: 3vh;}
+    .subtitel {
+        margin-top: 20px;
+        font-size: 3vh;
+    }
 
-            .container{
-                max-width: 94%;
-            }
+    .container {
+        max-width: 94%;
+    }
 
-            .logoheader{
-                height: 50px;
-            }
+    .logoheader {
+        height: 50px;
+    }
 
-            .arrow {
-                bottom: -50px;}
-                .bordertext{
-                    display: none;
-                }
+    .arrow {
+        bottom: 0px;
+    }
 
-  }
+    .bordertext {
+        display: none;
+    }
+
+    body {
+        overflow-x: hidden !important;
+        overflow-y: scroll;
+    }
+
+}
